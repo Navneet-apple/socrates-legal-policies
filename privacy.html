@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | Socrates - Legal Policies</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f5f7fb; --surface: #fff; --text: #172033; --muted: #5c667a; --accent: #4658c8; --border: #e1e6ef; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header { padding: 3rem 1.25rem 2rem; text-align: center; background: linear-gradient(135deg, #293b8f, #6674df); color: #fff; }
+    header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; }
+    header p { margin: .75rem 0 0; color: #e5e9ff; }
+    nav { position: sticky; top: 0; z-index: 1; display: flex; justify-content: center; gap: .75rem; padding: .8rem 1rem; background: var(--surface); border-bottom: 1px solid var(--border); }
+    nav a { color: var(--accent); font-weight: 650; text-decoration: none; padding: .35rem .7rem; border-radius: .5rem; }
+    nav a:hover, nav a:focus-visible { background: var(--bg); text-decoration: underline; }
+    main { width: min(900px, calc(100% - 2rem)); margin: 2rem auto 4rem; }
+    section { scroll-margin-top: 5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1.25rem, 4vw, 2.5rem); margin: 0 0 1.5rem; box-shadow: 0 8px 28px #1720330a; }
+    h2 { margin: 0 0 .25rem; font-size: clamp(1.65rem, 4vw, 2.15rem); line-height: 1.25; }
+    h3 { margin: 1.8rem 0 .35rem; font-size: 1.15rem; }
+    .updated { color: var(--muted); margin: 0 0 1.25rem; }
+    p { margin: .65rem 0; }
+    ul { padding-left: 1.4rem; margin: .5rem 0 1rem; }
+    li { padding-left: .2rem; margin: .35rem 0; }
+    footer { color: var(--muted); text-align: center; padding: 0 1rem 2rem; font-size: .9rem; }
+    @media (max-width: 520px) { nav { gap: .25rem; } section { border-radius: .7rem; } }
+  </style>
+</head>
+<body>
+  <header><h1>Socrates - Legal Policies</h1><p>Privacy Policy</p></header>
+  <nav aria-label="Legal policies"><a href="index.html">All policies</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+  <main>    <section id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p class="updated">Last Updated: October 20, 2026</p>
+      <p>This Privacy Policy describes how Socrates ("the Bot") collects, uses, and handles information when you interact with it on Discord.</p>
+      <h3>1. Information We Collect</h3>
+      <p>To function effectively, the Bot processes the following data:</p>
+      <ul>
+        <li>Discord User IDs &amp; Usernames: Used to track cooldowns, administrative privilege levels, and manage direct message interactions.</li>
+        <li>Message Content: Text sent via @mentions, slash commands, or [bracket] commands to generate AI support responses.</li>
+        <li>Channel Conversation History: Recent channel messages are temporarily processed in memory to provide context for multi-turn support queries.</li>
+        <li>Uploaded Files: Optional configuration files, .json backups, or .txt logs uploaded for automated inspection are processed strictly in memory and are not permanently stored.</li>
+      </ul>
+      <h3>2. How Data Is Used</h3>
+      <p>AI Processing: Message content and relevant product knowledge (data/knowledge.md) are sent to secure, OpenAI-compatible AI API endpoints (such as Groq) solely to generate accurate answers to your support questions.</p>
+      <p>Rate Limiting &amp; Security: User identifiers are temporarily held in volatile RAM to enforce anti-spam cooldowns and verify administrator/owner permissions.</p>
+      <p>Settings Persistence: Server-specific or global runtime configurations (data/runtime.json) are stored locally on the hosting infrastructure or secured via private admin channel backups.</p>
+      <h3>3. Data Storage &amp; Retention</h3>
+      <p>The Bot does not permanently store user chat logs, personal messages, or user profiles in a database.</p>
+      <p>In-memory caches, conversation histories, and response caches are automatically cleared or overwritten regularly and during container restarts.</p>
+      <p>Uploaded config/log files are discarded immediately after analysis.</p>
+      <h3>4. Third-Party Services</h3>
+      <p>The Bot interacts with third-party APIs to provide its core functionality:</p>
+      <ul>
+        <li>Discord API: For message delivery, interaction handling, and gateway events.</li>
+        <li>Groq / OpenAI-Compatible LLM APIs: For processing natural language support queries. Data transmitted to these providers is governed by their respective privacy policies and data-handling agreements.</li>
+      </ul>
+      <h3>5. Contact</h3>
+      <p>If you have any questions or concerns regarding these Terms of Service or Privacy Policy, please reach out to the server owner or bot administrator.</p>
+    </section></main>
+  <footer>Socrates - Legal Policies</footer>
+</body>
+</html>
